@@ -1,0 +1,41 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: stevenward93-youtarr_app_1
+      APP_PORT: 3011
+
+  db:
+    image: mariadb:10.3
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: youtarr
+      MYSQL_DATABASE: youtarr
+      MYSQL_TCP_PORT: 3321
+    command:
+      - --port=3321
+    volumes:
+      - ${APP_DATA_DIR}/db:/var/lib/mysql
+
+  app:
+    image: dialmaster/youtarr:latest
+    restart: unless-stopped
+    depends_on:
+      - db
+    environment:
+      IN_DOCKER_CONTAINER: "1"
+      DB_HOST: db
+      DB_PORT: 3321
+      DB_USER: root
+      DB_PASSWORD: youtarr
+      DB_NAME: youtarr
+      AUTH_ENABLED: "true"
+      AUTH_PRESET_USERNAME: admin
+      AUTH_PRESET_PASSWORD: youtarr
+      YOUTUBE_OUTPUT_DIR: /downloads
+    volumes:
+      - ${APP_DATA_DIR}/config:/app/config
+      - ${APP_DATA_DIR}/jobs:/app/jobs
+      - ${APP_DATA_DIR}/images:/app/server/images
+      - ${UMBREL_ROOT}/home/Downloads/youtube:/downloads
