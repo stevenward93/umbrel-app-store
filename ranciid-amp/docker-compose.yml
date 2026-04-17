@@ -3,13 +3,12 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: ranciid-amp_ranciid-amp_1
+      APP_HOST: ranciid-amp
       APP_PORT: 8080
 
   ranciid-amp:
-    image: mitchtalmadge/amp-dockerized:v26
+    image: mitchtalmadge/amp-dockerized:latest
     restart: unless-stopped
-
     environment:
       TZ: America/Los_Angeles
       UID: "1000"
@@ -19,21 +18,12 @@ services:
       USERNAME: "admin"
       PASSWORD: "ChangeInCompose!1"
       AMP_AUTO_UPDATE: "true"
-
     volumes:
       - ${APP_DATA_DIR}/amp:/home/amp
-
     networks:
       default:
         mac_address: "02:42:AC:60:20:92"
-
     ports:
       # Add only the game ports you actually need before install/restart.
-      # Examples:
       # - "25565:25565/tcp"
       # - "25565:25565/udp"
-      # - "19132:19132/udp"
-      # - "27015:27015/udp"
-      # - "2456:2456/udp"
-      # - "2457:2457/udp"
-      # - "2458:2458/udp"
