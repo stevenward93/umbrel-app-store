@@ -10,17 +10,14 @@ services:
     image: mariadb:10.6
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: youtarr!1
+      MYSQL_ROOT_PASSWORD: youtarr
       MYSQL_DATABASE: youtarr
       MYSQL_TCP_PORT: 3321
-      MYSQL_CHARSET: utf8mb4
-      MYSQL_COLLATION: utf8mb4_unicode_ci
     command:
       - --port=3321
       - --character-set-server=utf8mb4
       - --collation-server=utf8mb4_unicode_ci
       - --innodb-file-per-table=1
-      - --innodb-large-prefix=ON
     volumes:
       - ${APP_DATA_DIR}/db:/var/lib/mysql
 
@@ -34,12 +31,15 @@ services:
       DB_HOST: db
       DB_PORT: 3321
       DB_USER: root
-      DB_PASSWORD: youtarr!1
+      DB_PASSWORD: youtarr
       DB_NAME: youtarr
+
       AUTH_ENABLED: "true"
       AUTH_PRESET_USERNAME: admin
-      AUTH_PRESET_PASSWORD: youtarr!1
+      AUTH_PRESET_PASSWORD: "FishingIsDank123!"
+
       YOUTUBE_OUTPUT_DIR: /downloads
+
     volumes:
       - ${APP_DATA_DIR}/config:/app/config
       - ${APP_DATA_DIR}/jobs:/app/jobs
