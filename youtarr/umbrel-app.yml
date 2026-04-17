@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: youtarr
+id: ranciid-youtarr
 name: Youtarr
 tagline: Automated YouTube downloading and library management
 icon: https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/icon.png
