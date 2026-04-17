@@ -1,0 +1,20 @@
+id: stevenward93-youtarr
+name: Youtarr
+version: "1.0.0"
+tagline: YouTube automation like Sonarr
+description: >
+  Youtarr automatically downloads and manages YouTube content.
+
+developer: community
+website: https://github.com/dialmaster/youtarr
+submitter: stevenward93
+submission: https://github.com/stevenward93/umbrel-app-store
+
+repo: https://github.com/dialmaster/youtarr
+support: https://github.com/dialmaster/youtarr/issues
+
+port: 3011
+
+icon: icon.png
+
+category: media
