@@ -27,9 +27,7 @@ repo: https://github.com/dialmaster/youtarr
 support: https://github.com/dialmaster/youtarr/issues
 
 gallery:
-  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/gallery-1.png
-  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/gallery-2.png
-  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/gallery-3.png
+  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/icon.png
 
 releaseNotes: >-
   Initial Umbrel community store release. Includes MariaDB-backed app data,
