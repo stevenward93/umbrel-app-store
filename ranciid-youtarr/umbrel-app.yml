@@ -2,7 +2,7 @@ manifestVersion: 1
 id: ranciid-youtarr
 name: Youtarr
 tagline: Automated YouTube downloading and library management
-icon: https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/icon.png
+icon: https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/ranciid-youtarr/icon.png
 category: Media
 version: "1.0.0"
 port: 3011
@@ -27,7 +27,7 @@ repo: https://github.com/dialmaster/youtarr
 support: https://github.com/dialmaster/youtarr/issues
 
 gallery:
-  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/icon.png
+  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/ranciid-youtarr/icon.png
 
 releaseNotes: >-
   Initial Umbrel community store release. Includes MariaDB-backed app data,
