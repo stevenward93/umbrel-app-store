@@ -3,11 +3,11 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: ranciid-amp
+      APP_HOST: ranciid-amp_ranciid-amp_1
       APP_PORT: 8080
 
   ranciid-amp:
-    image: mitchtalmadge/amp-dockerized:latest
+    image: mitchtalmadge/amp-dockerized:v26
     restart: unless-stopped
 
     environment:
