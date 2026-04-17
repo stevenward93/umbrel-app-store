@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: ranciid-amp
+name: AMP
+tagline: Self-hosted game server control panel
+icon: https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/ranciid-amp/icon.png
+category: Developer Tools
+version: "1.0.0"
+port: 8080
+description: >-
+  AMP is a self-hosted game server control panel for managing dedicated servers
+  from a web UI on your Umbrel. This package runs the Dockerized AMP image with
+  persistent app data, Umbrel app proxy integration, and a fixed MAC address for
+  license stability.
+
+  Edit docker-compose.yml before install if you need to expose game-specific
+  ports. The AMP web UI itself is served through Umbrel on port 8080.
+developer: MitchTalmadge
+website: https://github.com/MitchTalmadge/AMP-dockerized
+submitter: Ranciid
+submission: https://github.com/Ranciid/umbrel-app-store
+repo: https://github.com/MitchTalmadge/AMP-dockerized
+support: https://github.com/MitchTalmadge/AMP-dockerized/issues
+gallery:
+  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/ranciid-amp/icon.png
+releaseNotes: >-
+  Initial Umbrel community package for AMP with app proxy support and persistent storage.
+dependencies: []
+path: ""
+defaultUsername: "admin"
+defaultPassword: "ChangeInCompose!1"
