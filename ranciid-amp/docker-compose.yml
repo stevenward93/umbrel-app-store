@@ -3,10 +3,10 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: ranciid-amp
+      APP_HOST: ranciid-amp_app_1
       APP_PORT: 8080
 
-  ranciid-amp:
+  app:
     image: mitchtalmadge/amp-dockerized:latest
     restart: unless-stopped
     environment:
@@ -23,7 +23,3 @@ services:
     networks:
       default:
         mac_address: "02:42:AC:60:20:92"
-    ports:
-      # Add only the game ports you actually need before install/restart.
-      # - "25565:25565/tcp"
-      # - "25565:25565/udp"
