@@ -38,10 +38,10 @@ services:
       AUTH_PRESET_USERNAME: admin
       AUTH_PRESET_PASSWORD: "ChangeInCompose!1"
 
-      YOUTUBE_OUTPUT_DIR: /downloads
+      YOUTUBE_OUTPUT_DIR: /data
 
     volumes:
       - ${APP_DATA_DIR}/config:/app/config
       - ${APP_DATA_DIR}/jobs:/app/jobs
       - ${APP_DATA_DIR}/images:/app/server/images
-      - ${UMBREL_ROOT}/home/Downloads/youtarr:/downloads
+      - ${UMBREL_ROOT}/home/Downloads/youtarr:/usr/src/app/data
