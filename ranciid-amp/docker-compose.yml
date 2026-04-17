@@ -8,7 +8,6 @@ services:
 
   ranciid-amp:
     image: mitchtalmadge/amp-dockerized:latest
-    container_name: amp
     restart: unless-stopped
 
     environment:
