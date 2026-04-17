@@ -21,15 +21,15 @@ description: >-
 
 developer: Dialmaster
 website: https://github.com/dialmaster/youtarr
-submitter: stevenward93
-submission: https://github.com/stevenward93/umbrel-app-store
+submitter: Ranciid
+submission: https://github.com/Ranciid/umbrel-app-store
 repo: https://github.com/dialmaster/youtarr
 support: https://github.com/dialmaster/youtarr/issues
 
 gallery:
-  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/gallery-1.png
-  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/gallery-2.png
-  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/gallery-3.png
+  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/gallery-1.png
+  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/gallery-2.png
+  - https://raw.githubusercontent.com/Ranciid/umbrel-app-store/main/youtarr/gallery-3.png
 
 releaseNotes: >-
   Initial Umbrel community store release. Includes MariaDB-backed app data,
