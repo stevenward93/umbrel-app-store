@@ -44,4 +44,4 @@ services:
       - ${APP_DATA_DIR}/config:/app/config
       - ${APP_DATA_DIR}/jobs:/app/jobs
       - ${APP_DATA_DIR}/images:/app/server/images
-      - ${UMBREL_ROOT}/home/Downloads/youtube:/downloads
+      - ${UMBREL_ROOT}/home/Downloads/youtarr:/downloads
