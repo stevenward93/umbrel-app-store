@@ -6,7 +6,7 @@ services:
       APP_HOST: ranciid-amp
       APP_PORT: 8080
 
-  amp:
+  ranciid-amp:
     image: mitchtalmadge/amp-dockerized:latest
     container_name: amp
     restart: unless-stopped
