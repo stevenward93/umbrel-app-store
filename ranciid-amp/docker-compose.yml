@@ -3,7 +3,7 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: amp
+      APP_HOST: ranciid-amp
       APP_PORT: 8080
 
   amp:
