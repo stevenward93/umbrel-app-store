@@ -36,7 +36,7 @@ services:
 
       AUTH_ENABLED: "true"
       AUTH_PRESET_USERNAME: admin
-      AUTH_PRESET_PASSWORD: "FishingIsDank123!"
+      AUTH_PRESET_PASSWORD: "ChangeInCompose!1"
 
       YOUTUBE_OUTPUT_DIR: /downloads
 
