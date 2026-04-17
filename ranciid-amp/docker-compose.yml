@@ -16,7 +16,7 @@ services:
       PORT: "8080"
       IPBINDING: "0.0.0.0"
       USERNAME: "admin"
-      PASSWORD: "ChangeInCompose!1"
+      PASSWORD: "ChangeAfterSetup!1"
       AMP_AUTO_UPDATE: "true"
     volumes:
       - ${APP_DATA_DIR}/amp:/home/amp
