@@ -10,7 +10,7 @@ services:
     image: mariadb:10.6
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: youtarr
+      MYSQL_ROOT_PASSWORD: youtarr!1
       MYSQL_DATABASE: youtarr
       MYSQL_TCP_PORT: 3321
       MYSQL_CHARSET: utf8mb4
@@ -34,11 +34,11 @@ services:
       DB_HOST: db
       DB_PORT: 3321
       DB_USER: root
-      DB_PASSWORD: youtarr
+      DB_PASSWORD: youtarr!1
       DB_NAME: youtarr
       AUTH_ENABLED: "true"
       AUTH_PRESET_USERNAME: admin
-      AUTH_PRESET_PASSWORD: youtarr
+      AUTH_PRESET_PASSWORD: youtarr!1
       YOUTUBE_OUTPUT_DIR: /downloads
     volumes:
       - ${APP_DATA_DIR}/config:/app/config
