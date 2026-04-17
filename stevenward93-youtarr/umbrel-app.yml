@@ -1,25 +1,40 @@
 manifestVersion: 1
-id: stevenward93-youtarr
+id: youtarr
 name: Youtarr
-tagline: YouTube automation like Sonarr
+tagline: Automated YouTube downloading and library management
 icon: https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/icon.png
 category: Media
 version: "1.0.0"
 port: 3011
+
 description: >-
-  Youtarr automatically downloads and manages YouTube content.
-developer: community
+  Youtarr is a self-hosted YouTube downloader and organizer built for people
+  who want a Sonarr-style experience for channels and videos. Add channels,
+  manage downloads, organize your library, and keep everything running locally
+  on your own Umbrel.
+
+  Original project is graciously provided by Dialmaster. I have just ported this over to work 
+  seamlessly with my UmbrelOS system without needing to fuss with Portainer. This project was
+  made possible the help of ChatGPT as I am very new to this sort of thing.
+
+  Video downloads default to UmbrelOS default downloads folder within its own youtarr subfolder.
+
+developer: Dialmaster
 website: https://github.com/dialmaster/youtarr
 submitter: stevenward93
 submission: https://github.com/stevenward93/umbrel-app-store
 repo: https://github.com/dialmaster/youtarr
 support: https://github.com/dialmaster/youtarr/issues
+
 gallery:
-  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/icon.png
-  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/icon.png
-  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/icon.png
+  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/gallery-1.png
+  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/gallery-2.png
+  - https://raw.githubusercontent.com/stevenward93/umbrel-app-store/main/stevenward93-youtarr/gallery-3.png
+
 releaseNotes: >-
-  Initial community store release for Youtarr.
+  Initial Umbrel community store release. Includes MariaDB-backed app data,
+  persistent config storage, and a dedicated Downloads/youtarr media output path.
+
 dependencies: []
 path: ""
 defaultUsername: "admin"
